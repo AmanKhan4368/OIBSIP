@@ -1,41 +1,181 @@
-/* Reset */
+/* General Styles */
 * {
-    margin: 5px;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
 
-#header-container1{
-    background-color: black;
-    border-radius: 20px;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    padding-right: 1%;
-    padding-left: 1%;
-    padding-top: 5px;
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+    scroll-behavior: smooth;
 }
 
-#header-container2{
-   display: flex;
-   direction: row;
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
 }
 
-header img{
-    width: 32px;
-    height: 32px;
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+    text-align: center;
+    padding: 120px 0;
+    position: relative;
+    overflow: hidden;
 }
 
-header h1{
-    margin-top: 0.5%;
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in;
 }
 
-header li{
-    display: inline;
+.hero p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+    animation: fadeIn 1.5s ease-in;
 }
 
-header a{
-    color: white;
+.cta-button {
+    background-color: #fff;
+    color: #2575fc;
+    padding: 15px 30px;
     text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
 }
 
+.cta-button:hover {
+    background-color: #2575fc;
+    color: #fff;
+}
+
+/* Features Section */
+.features {
+    padding: 80px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.features h2 {
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #333;
+    position: relative;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    flex: 1;
+    margin: 15px;
+    min-width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    animation: fadeInUp 1.5s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* Contact Section */
+.contact {
+    padding: 80px 0;
+    text-align: center;
+    background: linear-gradient(to right, #2575fc, #6a11cb);
+    color: white;
+}
+
+.contact h2 {
+    margin-bottom: 40px;
+    font-size: 2.5em;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact input,
+.contact textarea {
+    margin: 10px 0;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.contact button {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #2575fc;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #2575fc;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .feature-cards {
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+}
