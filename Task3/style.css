@@ -1,0 +1,92 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #6dd5fa, #2980b9);
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 600px;
+    margin: 2rem auto;
+  }
+  
+  header {
+    text-align: center;
+    color: white;
+    padding: 1.5rem 0;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+  }
+  
+  main {
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .converter h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #2980b9;
+  }
+  
+  label {
+    display: block;
+    margin: 1rem 0 0.5rem;
+    font-weight: bold;
+  }
+  
+  input, select, button {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  button {
+    background: #2980b9;
+    color: white;
+    cursor: pointer;
+    border: none;
+  }
+  
+  button:hover {
+    background: #1e6091;
+  }
+  
+  .result-display {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .result-display h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .result-display p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2980b9;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 2rem;
+    color: white;
+    font-size: 0.9rem;
+  }
+  
